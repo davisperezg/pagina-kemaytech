@@ -178,7 +178,12 @@ const Home: NextPage = () => {
                   </p>
                 </div>
                 <div>
-                  <a type="button">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://api.whatsapp.com/send?phone=51936680337&text=Hola,%20informaci%C3%B3n%20sobre%20GPS%20por%20favor."
+                    type="button"
+                  >
                     <button>COTIZAR SERVICIO</button>
                   </a>
                 </div>
