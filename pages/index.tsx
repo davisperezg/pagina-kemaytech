@@ -226,6 +226,62 @@ const Home: NextPage = () => {
               <div className={styles.section_item_title}>
                 <h1>Funciones principales para monitoreo web</h1>
               </div>
+              {/* CEL */}
+              <div className={styles.content_lista_CEL}>
+                <div
+                  onClick={hableActivationIMG1WEB}
+                  className={
+                    isActiveIMG1WEB
+                      ? styles.item_lista_active
+                      : styles.item_lista
+                  }
+                >
+                  <div className={styles.number_lista}>1</div>
+                  <div className={styles.text_lista}>
+                    <p>Seguimiento en linea</p>
+                  </div>
+                </div>
+                <div
+                  onClick={hableActivationIMG2WEB}
+                  className={
+                    isActiveIMG2WEB
+                      ? styles.item_lista_active
+                      : styles.item_lista
+                  }
+                >
+                  <div className={styles.number_lista}>2</div>
+                  <div className={styles.text_lista}>
+                    <p> Control de combustible</p>
+                  </div>
+                </div>
+                <div
+                  onClick={hableActivationIMG3WEB}
+                  className={
+                    isActiveIMG3WEB
+                      ? styles.item_lista_active
+                      : styles.item_lista
+                  }
+                >
+                  <div className={styles.number_lista}>3</div>
+                  <div className={styles.text_lista}>
+                    <p>Enrutamiento</p>
+                  </div>
+                </div>
+                <div
+                  onClick={hableActivationIMG4WEB}
+                  className={
+                    isActiveIMG4WEB
+                      ? styles.item_lista_active
+                      : styles.item_lista
+                  }
+                >
+                  <div className={styles.number_lista}>4</div>
+                  <div className={styles.text_lista}>
+                    <p>Geocercas</p>
+                  </div>
+                </div>
+              </div>
+              {/* FIN CEL */}
               <div className={styles.content_web}>
                 <div className={styles.content_titulo_img}>
                   <div className={styles.titulo_web}>
@@ -331,13 +387,11 @@ const Home: NextPage = () => {
             </section>
 
             <section className={styles.section_item}>
-              <div className={styles.section_item_title}>
+              <div className={styles.section_item_title_cel}>
                 <h1>Funciones principales para dispositivos mobiles</h1>
               </div>
               {/* INICIO CARD1 <FontAwesomeIcon size="lg" icon={faCheckCircle} />*/}
-              <div
-                style={{ display: "flex", flexDirection: "row", marginTop: 50 }}
-              >
+              <div className={styles.contents_cards}>
                 <div className={styles.section_card}>
                   <div
                     onClick={hableActivationIMG1}
@@ -351,9 +405,9 @@ const Home: NextPage = () => {
                     </div>
                     <div className={styles.card_text}>
                       <p>
-                        Get all the necessary information on movement and
-                        ignition state, data actuality, and unit location in
-                        real time.
+                        Obtenga toda la información necesaria sobre el
+                        movimiento y el estado de encendido, la actualidad de
+                        los datos y la ubicación de la unidad en tiempo real.
                       </p>
                     </div>
                   </div>
@@ -369,9 +423,9 @@ const Home: NextPage = () => {
                     </div>
                     <div className={styles.card_text}>
                       <p>
-                        Get all the necessary information on movement and
-                        ignition state, data actuality, and unit location in
-                        real time.
+                        Enviar comandos: mensaje, ruta, solicitudes de
+                        configuración o foto de la cámara para el control remoto
+                        de la unidad.
                       </p>
                     </div>
                   </div>
@@ -387,13 +441,14 @@ const Home: NextPage = () => {
                     </div>
                     <div className={styles.card_text}>
                       <p>
-                        Get all the necessary information on movement and
-                        ignition state, data actuality, and unit location in
-                        real time.
+                        Encienda / apague la pantalla visual de la ubicación de
+                        la unidad dentro de una geovalla en lugar de la
+                        información de la dirección.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 {/* FIN CARD1 <FontAwesomeIcon size="lg" icon={faCheckCircle} />*/}
                 {/* INICIO IMAGEN */}
                 <div className={styles.imagen}>
@@ -461,9 +516,9 @@ const Home: NextPage = () => {
                     </div>
                     <div className={styles.card_text}>
                       <p>
-                        Get all the necessary information on movement and
-                        ignition state, data actuality, and unit location in
-                        real time.
+                        Utilice los datos detallados sobre los viajes, las
+                        paradas, los robos de combustible y los repostajes del
+                        vehículo para tomar decisiones en el momento.
                       </p>
                     </div>
                   </div>
@@ -479,9 +534,9 @@ const Home: NextPage = () => {
                     </div>
                     <div className={styles.card_text}>
                       <p>
-                        Get all the necessary information on movement and
-                        ignition state, data actuality, and unit location in
-                        real time.
+                        Controle los eventos de la unidad (movimiento, parada,
+                        llenado de combustible, robo de combustible) en orden
+                        cronológico y muéstrelos en el mapa.
                       </p>
                     </div>
                   </div>
@@ -497,11 +552,63 @@ const Home: NextPage = () => {
                     </div>
                     <div className={styles.card_text}>
                       <p>
-                        Get all the necessary information on movement and
-                        ignition state, data actuality, and unit location in
-                        real time.
+                        Accede a unidades, geocercas, pistas y marcadores de
+                        eventos en el mapa con la opción de detectar tu propia
+                        ubicación.
                       </p>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.content_imgs_cel}>
+                <div className={styles.mascara}>
+                  <div className={styles.frame} />
+                  <div className={styles.mascaraCli}>
+                    {isActiveIMG1 && (
+                      <img
+                        src="/images/5e1f2adf244b3.png"
+                        // width={1080}
+                        // height={2330}
+                        className={styles.imagenimage}
+                        alt="Kemay app"
+                      />
+                    )}
+                    {isActiveIMG2 && (
+                      <img
+                        src="/images/5dbc4369c6992.png"
+                        className={styles.imagenimage}
+                        alt="Kemay app"
+                      />
+                    )}
+                    {isActiveIMG3 && (
+                      <img
+                        src="/images/5dbc4388032dc.png"
+                        className={styles.imagenimage}
+                        alt="Kemay app"
+                      />
+                    )}
+                    {isActiveIMG4 && (
+                      <img
+                        src="/images/5dbfec5c00c6b.png"
+                        className={styles.imagenimage}
+                        alt="Kemay app"
+                      />
+                    )}
+                    {isActiveIMG5 && (
+                      <img
+                        src="/images/5dbc43ad2d2b0.png"
+                        className={styles.imagenimage}
+                        alt="Kemay app"
+                      />
+                    )}
+                    {isActiveIMG6 && (
+                      <img
+                        src="/images/5dbc43d054efa.png"
+                        className={styles.imagenimage}
+                        alt="Kemay app"
+                      />
+                    )}
                   </div>
                 </div>
               </div>
