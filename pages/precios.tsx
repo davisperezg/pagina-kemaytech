@@ -19,15 +19,15 @@ interface Contacto {
   Mensaje: string;
 }
 
-const intialValueContacto = {
-  RUC: "",
-  Unidades: "",
-  Correo: "",
-  Mensaje: "",
+const intialValueContacto :Contacto = {
+  RUC:"",
+  Unidades:"",
+  Correo:"",
+  Mensaje:"",
 };
 
 const Precios: NextPage = () => {
-  const [isActivePerson, setActivePerson] = useState<boolean>(false);
+  const [isActivePerson, setActivePerson] = useState<boolean>(true);
   const [isActiveCompany, setActiveCompany] = useState<boolean>(false);
 
   const activarPersona = () => {
