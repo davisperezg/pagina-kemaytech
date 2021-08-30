@@ -27,6 +27,7 @@ import {
   faCheckCircle,
   faListAlt,
 } from "@fortawesome/free-regular-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
   const [isActivePremiun, setActivePremiun] = useState<boolean>(false);
@@ -163,6 +164,18 @@ const Home: NextPage = () => {
           </div>
         </Nav>
         <Main>
+        <div className={styles.celular}>
+
+<a
+target="_blank"
+rel="noopener noreferrer"
+href="https://api.whatsapp.com/send?phone=51936680337&text=Hola,%20informaci%C3%B3n%20sobre%20GPS%20por%20favor."
+>
+<div >
+<FontAwesomeIcon size="2x" icon={faWhatsapp} />
+</div>
+</a>
+</div>
           <div className={styles.content_main}>
             <section className={styles.section}>
               <div className={styles.article_one}>
@@ -616,6 +629,8 @@ const Home: NextPage = () => {
           </div>
         </Main>
         <Aside>
+         
+          
           <div className={styles.content_aside}>
             <div className={styles.div_item}>
               <FontAwesomeIcon icon={faMapMarkedAlt} />
