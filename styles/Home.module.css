@@ -368,6 +368,7 @@
   .aside_whats {
     width: 60px;
     height: 60px;
+    bottom: 80px;
     background: #00e576;
     border-radius: 50px;
     display: flex;
@@ -773,6 +774,7 @@
   .aside_whats {
     width: 60px;
     height: 60px;
+    bottom: 80px;
     background: #00e576;
     border-radius: 50px;
     display: flex;
@@ -1190,6 +1192,7 @@
   .aside_whats {
     width: 60px;
     height: 60px;
+    bottom: 80px;
     background: #00e576;
     border-radius: 50px;
     display: flex;
