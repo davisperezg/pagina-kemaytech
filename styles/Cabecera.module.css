@@ -4,6 +4,26 @@
     width: 100%;
     box-shadow: 0 16px 24px rgb(55 71 79 / 8%), 0 8px 8px rgb(55 71 79 / 12%);
   }
+  
+  .div_logo_title {
+    width: 90%;
+    display: flex;
+  }
+
+  .div_iconbar {
+    width: 10%;
+  }
+
+  .menu_celulares{
+    background:#fff;
+                width:100%;
+                height:100%;
+                padding:10px;
+  }
+
+  .li_menu_celulares{
+    display: flex;
+  }
 
   .logo {
     display: flex;
@@ -14,7 +34,15 @@
   }
 
   .title_logo {
-    display: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .title_logo strong {
+    letter-spacing: 0.9px;
+    font-size: 16px;
   }
 
   .content_logo {
@@ -35,6 +63,7 @@
   }
 
   .content_menu_cel {
+  
   }
 
   .content_menu_cel ul {
@@ -46,7 +75,7 @@
     list-style: none;
     width: 100%;
     background: #fff;
-    padding: 20px;
+    padding: 0px;
   }
 
   .content_menu_cel ul li a {
@@ -59,7 +88,73 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .cabecera {
+    z-index: 2;
+    position: fixed;
     width: 100%;
+    height: 56px;
+    overflow: hidden;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 16px 24px rgb(55 71 79 / 8%), 0 8px 8px rgb(55 71 79 / 12%);
+  }
+
+  .div_logo_title{
+    height: 100%;
+  }
+
+  .div_iconbar{
+    display:none;
+  }
+
+  .content_logo {
+    width: 300px;
+    height: 100%;
+  }
+
+  .logo {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .title_logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .content_links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc(100% - 300px);
+  }
+
+  .nav_content_links {
+    margin: 0 10px 0 10px;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+  }
+
+  .content_ul {
+    list-style: none;
+    display: inline-block;
+  }
+
+  .content_ul li {
+    float: left;
+  }
+
+  .content_ul li:hover {
+    background: #f5f8fb;
+  }
+
+  .content_ul li a {
+    font-size: 15px;
+    padding: 18px;
+    color: #222d39;
   }
 }
 
@@ -74,6 +169,14 @@
     display: flex;
     background: #fff;
     box-shadow: 0 16px 24px rgb(55 71 79 / 8%), 0 8px 8px rgb(55 71 79 / 12%);
+  }
+
+  .div_logo_title{
+    height: 100%;
+  }
+
+  .div_iconbar{
+    display:none;
   }
 
   .content_logo {
@@ -133,6 +236,11 @@
   .menu_cel {
     display: none;
   }
+
+  .div_iconbar{
+    display:none;
+  }
+
 
   .cabecera {
     z-index: 2;
